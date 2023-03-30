@@ -1,0 +1,98 @@
+.sc-list03 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: var(--sys-wid);
+  background: #fff;
+}
+.sc-list03 .m-bd {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sc-list03 .m-bd .m-item {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 20px;
+  box-sizing: border-box;
+}
+.sc-list03 .m-bd .m-item > label {
+  color: var(--clr-main);
+  line-height: 42px;
+  padding-left: calc(0.75rem + 42px);
+  position: relative;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+.sc-list03 .m-bd .m-item > label.icon:before {
+  content: 'Q';
+  font-size: 22px;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  color: #fff;
+  background-color: #54c1c8;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.sc-list03 .m-bd .m-item > span {
+  font-size: 1.6rem;
+  padding-left: calc(0.75rem + 42px);
+  color: #333;
+}
+.sc-list03 .m-bd .m-item.icon {
+  padding-left: 25px;
+}
+@media all and (max-width: 500px) {
+  .sc-list03 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: var(--sys-wid);
+    background: #fff;
+  }
+  .sc-list03 .m-bd {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sc-list03 .m-bd .m-item {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 20px;
+    box-sizing: border-box;
+  }
+  .sc-list03 .m-bd .m-item > label {
+    color: var(--clr-main);
+    line-height: 21px;
+    padding-left: calc(0.75rem + 21px);
+    position: relative;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  .sc-list03 .m-bd .m-item > label.icon:before {
+    content: 'Q';
+    font-size: 11px;
+    width: 21px;
+    height: 21px;
+    line-height: 21px;
+    text-align: center;
+    color: #fff;
+    background-color: #54c1c8;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .sc-list03 .m-bd .m-item > span {
+    font-size: 0.8rem;
+    padding-left: calc(0.75rem + 21px);
+    color: #333;
+  }
+  .sc-list03 .m-bd .m-item.icon {
+    padding-left: 12px;
+  }
+}

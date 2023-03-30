@@ -1,0 +1,102 @@
+.sc-Img01 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: var(--sys-wid);
+  margin: auto;
+  background: #fff;
+}
+.sc-Img01 .m-bd {
+  display: flex;
+  flex-direction: column;
+}
+.sc-Img01 .m-bd .m-item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 30px 0;
+  font-size: 1.4rem;
+}
+.sc-Img01 .m-bd .m-item * {
+  margin: 6px 0;
+}
+.sc-Img01 .m-bd .m-item .m-img {
+  width: 35rem;
+  height: 100%;
+  margin: unset;
+}
+.sc-Img01 .m-bd .m-item .m-img img {
+  width: 100%;
+}
+.sc-Img01 .m-bd .m-item .m-cnt {
+  width: 50%;
+  margin-left: 10px;
+}
+.sc-Img01 .m-bd .m-item .m-cnt + .m-item {
+  border-top: 1px solid #eee;
+}
+.sc-Img01 .m-bd .m-item .m-cnt .m-ti {
+  color: #000;
+  font-size: 1.2rem;
+}
+.sc-Img01 .m-bd .m-item .m-cnt .m-ti label {
+  padding: 0.5rem;
+  background-color: #b3c2e5;
+}
+.sc-Img01 .m-bd .m-item .m-cnt .m-tl {
+  margin-top: 10px;
+  color: #000;
+  font-size: 1.2rem;
+}
+.sc-Img01 .m-bd .m-item .m-cnt .m-tl label {
+  padding: 0.5rem;
+  background-color: #f5f5f5;
+}
+.sc-Img01 .m-bd .m-item .m-cnt > .m-wd {
+  margin-top: 10px;
+}
+.sc-Img01 .m-bd .m-item .m-cnt > .m-wd > p,
+.sc-Img01 .m-bd .m-item .m-cnt > .m-wd > span {
+  color: #333;
+  font-weight: bold;
+  line-height: 30px;
+  letter-spacing: 1.6px;
+  text-indent: 3rem;
+}
+.sc-Img01 .m-bd .m-item .m-cnt > .m-wd > p + li,
+.sc-Img01 .m-bd .m-item .m-cnt > .m-wd > span + li {
+  margin-top: 15px;
+}
+.sc-Img01 .m-bd .m-item .m-cnt > .m-wd > li {
+  color: #333;
+  letter-spacing: 1.6px;
+}
+.sc-Img01 .m-bd .m-item .m-cnt > .m-wd > li.np {
+  list-style: none;
+}
+.sc-Img01 .m-bd .m-item .m-cnt > .m-wd > li + li {
+  margin-top: 3px;
+}
+@media all and (max-width: 500px) {
+  .sc-Img01 .m-item {
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .sc-Img01 .m-item > .m-img {
+    width: 100%!important;
+  }
+  .sc-Img01 .m-lab {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .sc-Img01 .m-tl {
+    margin-top: unset !important;
+  }
+  .sc-Img01 .m-cnt {
+    width: 100% !important;
+    margin-left: 0px !important;
+  }
+}

@@ -1,0 +1,115 @@
+.sc-list09 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: var(--sys-wid);
+  margin: auto;
+  background: #fff;
+}
+.sc-list09 .sc-title {
+  justify-content: left;
+  margin: 1rem 0;
+}
+.sc-list09 .sc-title ::before {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 5rem;
+  vertical-align: sub;
+  background: var(--clr-main);
+  border-radius: 50%;
+  content: '';
+}
+.sc-list09 .sc-title > span {
+  margin-left: 3rem;
+}
+.sc-list09 .line {
+  border-bottom: 1px none #eeeeee;
+}
+.sc-list09 .m-bd {
+  display: flex;
+  flex-direction: column;
+}
+.sc-list09 .m-bd .m-item {
+  width: 100%;
+  padding: 1rem 0;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+.sc-list09 .m-bd .m-item * {
+  margin: 6px 0;
+}
+.sc-list09 .m-bd .m-item > .m-bdy {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.sc-list09 .m-bd .m-item > .m-bdy > .m-lt {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 50%;
+  align-items: center;
+}
+.sc-list09 .m-bd .m-item > .m-bdy > .m-lt > .m-lb {
+  display: block;
+  width: max-content;
+  max-width: 40%;
+  padding: 3px 10px;
+  color: gray;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-radius: 10px;
+}
+.sc-list09 .m-bd .m-item > .m-bdy > .m-lt > .title {
+  width: max-content;
+  max-width: 60%;
+  margin: 6px 2rem;
+  color: var(--clr-main);
+  font-size: 2.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.sc-list09 .m-bd .m-item > .m-bdy > .m-cnt {
+  max-width: 50%;
+  line-height: 3.2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.sc-list09 .m-bd .m-item .m-line {
+  border-bottom: 2px solid var(--clr-sub);
+}
+@media all and (max-width: 500px) {
+  .sc-list09 .m-bdy {
+    flex-direction: column !important;
+    align-items: center !important;
+    font-size: 1.4rem !important;
+  }
+  .sc-list09 .m-bdy > .m-lt {
+    width: 100% !important;
+    padding: 0 1.6rem;
+    justify-content: space-around;
+  }
+  .sc-list09 .m-bdy > .m-lt > .m-lb {
+    width: 40% !important;
+    font-size: 1.6rem !important;
+  }
+  .sc-list09 .m-bdy > .m-lt > .title {
+    width: 60% !important;
+    font-size: 2rem !important;
+  }
+  .sc-list09 .m-bdy > .m-cnt {
+    max-width: 90% !important;
+    margin-top: 1rem !important;
+  }
+  .sc-list09 .m-cnt {
+    margin-top: unset !important;
+  }
+}
