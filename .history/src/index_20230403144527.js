@@ -1,4 +1,5 @@
 
+import { format } from '../storybook-static/316.0caeeb64.iframe.bundle';
 
 export { default as Img01 } from './Img01';
 export { default as Img02 } from './Img02';
