@@ -1,0 +1,75 @@
+import { ArgsTable, Canvas, Meta, Story } from "@storybook/addon-docs";
+import { List11 } from "../src";
+
+<Meta title="MDX/List11" component={List11} />
+
+<style>
+  {`
+    h2 {
+      color: rgba(0, 0, 0, 0.88);
+      font-weight: 500;
+      font-family: Avenir,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji',sans-serif;
+      font-size: 24px;
+      line-height: 32px;
+    }
+    ul, ol {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    ul li {
+      margin-left: 20px;
+      padding-left: 4px;
+      list-style-type: circle;
+    }
+  `}
+</style>
+
+# List11
+
+图像
+
+## 代码演示
+
+export const Template = (args) => <List11 data={args} />;
+
+<Canvas>
+  <Story
+    name="default"
+    args={{
+      list: [
+        {
+          title: "2019年06月04日",
+          label: "商品情报",
+          cnt: "加齢に伴い私たちの身体は、しみ・しわ・たるみの増加、視力・聴力の低下、筋力や抵抗力の減少など、さまざまな老化サインを見せ始めます。",
+        },
+        {
+          title: "2020年06月04日",
+          label: "商品情报",
+          cnt: "加齢に伴い私たちの身体は、しみ・しわ・たるみの増加、視力・聴力の低下、筋力や抵抗力の減少など、さまざまな老化サインを見せ始めます。",
+        },
+        {
+          title: "2021年06月04日",
+          label: "商品情报",
+          cnt: "加齢に伴い私たちの身体は、しみ・しわ・たるみの増加、視力・聴力の低下、筋力や抵抗力の減少など、さまざまな老化サインを見せ始めます。",
+        },
+      ],
+      round: true,
+      bottom: true,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## API
+
+- list `array`: ITEM 对象
+- round `boolean`: label 边框样式
+- bottom `boolean`：内容字段下划线样式
+
+### ITEM
+
+- title `string`：一级标签
+- label `string`：二级标签
+- cnt `string`：段落内容

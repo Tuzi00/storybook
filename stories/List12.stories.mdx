@@ -1,0 +1,60 @@
+import { ArgsTable, Canvas, Meta, Story } from "@storybook/addon-docs";
+import { List12 } from "../src";
+
+<Meta title="MDX/List12" component={List12} />
+
+<style>
+  {`
+    h2 {
+      color: rgba(0, 0, 0, 0.88);
+      font-weight: 500;
+      font-family: Avenir,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji',sans-serif;
+      font-size: 24px;
+      line-height: 32px;
+    }
+    ul, ol {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    ul li {
+      margin-left: 20px;
+      padding-left: 4px;
+      list-style-type: circle;
+    }
+  `}
+</style>
+
+# List12
+
+图像
+
+## 代码演示
+
+export const Template = (args) => <List12 data={args} />;
+
+<Canvas>
+  <Story
+    name="default"
+    args={{
+      des: "お知らせ",
+      title: "サイトカイン相談窓口",
+      cnt_g1: "06-6121-6103",
+      cnt_g2:
+        "加齢に伴い私たちの身体は、しみ・しわ・たるみの増加、視力・聴力の低下、筋力や抵抗力の減少など、さまざまな老化サインを見せ始めます。",
+      cnt_g3: "受付時間 / 平日9:00 ~ 18:00",
+      hr: true,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## API
+
+- des `string`: 卡片介绍
+- titile `string`: 标题内容
+- cnt_g1 `string`: 内容字段 1
+- cnt_g2 `string`: 内容字段 2
+- cnt_g3 `string`: 内容字段 3
+- hr `boolean`：分割线是否显示
