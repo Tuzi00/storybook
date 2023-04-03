@@ -13,7 +13,7 @@ const List06 =({data})=> {
         {data?.list.map((item,i)=> 
           <div className="m-item" key={i}>
             <div className="m-tl">{item.name}</div>
-            <div className="m-ossm">こんな方におすすめ</div>
+            <div className="m-ossm">{item.subtitle}</div>
             <div className="m-rec">
               {item.rec.map((o,j)=>
                 <li key={j}>{o}</li>
@@ -35,9 +35,9 @@ const List06 =({data})=> {
                   </div>
                 </div>
               )}
-              <div className="m-fn">
+              {/* <div className="m-fn">
                 <a>ご予約はこちら</a>
-              </div>
+              </div> */}
             </div>
           </div>
         )}

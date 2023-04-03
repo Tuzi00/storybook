@@ -1,0 +1,53 @@
+import { ArgsTable, Canvas, Meta, Story } from "@storybook/addon-docs";
+import { Img04 } from "../src";
+
+<Meta title="MDX/Img04" component={Img04} />
+
+<style>
+  {`
+    h2 {
+      color: rgba(0, 0, 0, 0.88);
+      font-weight: 500;
+      font-family: Avenir,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji',sans-serif;
+      font-size: 24px;
+      line-height: 32px;
+    }
+    ul, ol {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    ul li {
+      margin-left: 20px;
+      padding-left: 4px;
+      list-style-type: circle;
+    }
+  `}
+</style>
+
+# Img04
+
+图像
+
+## 代码演示
+
+export const Template = (args) => <Img04 data={args} />;
+
+<Canvas>
+  <Story
+    name="default"
+    args={{
+      title: "测试标题",
+      cnt: "段落文本内容测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试",
+      img: "https://images.pexels.com/photos/7245251/pexels-photo-7245251.jpeg",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## API
+
+- title `string`: 标题文本
+- cnt `string`: 段落内容
+- img `string`：图片链接

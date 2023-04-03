@@ -1,0 +1,58 @@
+import { ArgsTable, Canvas, Meta, Story } from "@storybook/addon-docs";
+import { List02 } from "../src";
+
+<Meta title="MDX/List02" component={List02} />
+
+<style>
+  {`
+    h2 {
+      color: rgba(0, 0, 0, 0.88);
+      font-weight: 500;
+      font-family: Avenir,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji',sans-serif;
+      font-size: 24px;
+      line-height: 32px;
+    }
+    ul, ol {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    ul li {
+      margin-left: 20px;
+      padding-left: 4px;
+      list-style-type: circle;
+    }
+  `}
+</style>
+
+# List02
+
+图像
+
+## 代码演示
+
+export const Template = (args) => <List02 data={args} />;
+
+<Canvas>
+  <Story
+    name="default"
+    args={{
+  list:["list内容1111",
+        "list内容111222221",
+        "list内容1113333331",
+        "list内容11144444441",
+        "list内容1115555551"],
+  icon: true,
+  dash: true,
+}}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## API
+
+- icon `boolean`: 是否显示图标
+- dash `boolean`: 是否显示下划线
+- list `array`: 内容数组
+

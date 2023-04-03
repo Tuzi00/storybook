@@ -1,14 +1,18 @@
 import { Image, Tag } from 'antd';
-import React from 'react';
+import React,{useEffect} from 'react';
 
 import './index.less'
 
+
 const Img01 = ({ data }) => {
+
+  useEffect(()=>{
+console.log(data);
+})
 
 
   return (
     <div className="sc-Img01">
-      {/* <Title title={data?.title} line={data?.line} /> */}
 
       <div className="m-bd">
         {data?.list.map((item, i) =>

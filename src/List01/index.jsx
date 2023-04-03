@@ -18,13 +18,13 @@ const List01 =({data})=> {
               </label>}
             </div>
 
-            {item.cnt.map((o,j)=>
+            {item.cnt?.map((o,j)=>
               <span key={j}>
                 {data?.id2 && <label>{j+1}. </label>} {o}
               </span>
             )}
 
-            {item.list.map((o,j)=>
+            {item.list?.map((o,j)=>
               <li className={data?.id3?'':'np'} key={j}>
                 <span>{o}</span>
               </li>

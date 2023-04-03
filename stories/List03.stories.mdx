@@ -1,0 +1,69 @@
+import { ArgsTable, Canvas, Meta, Story } from "@storybook/addon-docs";
+import { List03 } from "../src";
+
+<Meta title="MDX/List03" component={List03} />
+
+<style>
+  {`
+    h2 {
+      color: rgba(0, 0, 0, 0.88);
+      font-weight: 500;
+      font-family: Avenir,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji',sans-serif;
+      font-size: 24px;
+      line-height: 32px;
+    }
+    ul, ol {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    ul li {
+      margin-left: 20px;
+      padding-left: 4px;
+      list-style-type: circle;
+    }
+  `}
+</style>
+
+# List03
+
+图像
+
+## 代码演示
+
+export const Template = (args) => <List03 data={args} />;
+
+<Canvas>
+  <Story
+    name="default"
+    args={{
+      list: [
+        {
+          title: "一级标题",
+          cnt: "段落内容",
+        },
+        {
+          title: "一级标题测试22",
+          cnt: "段落内容测试2222",
+        },
+        {
+          title: "一级标题测试333",
+          cnt: "段落内容测试333",
+        },
+      ],
+      icon: true,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## API
+
+- icon `boolean`: 是否显示图标
+- list `array`: ITEM 对象
+
+### ITEM
+
+- title `string`: 一级标签
+- cnt `string`: 段落内容

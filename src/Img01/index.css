@@ -1,4 +1,6 @@
 .sc-Img01 {
+  background-color: #000;
+  height: auto;
   display: flex;
   flex-direction: column;
   width: 100%;

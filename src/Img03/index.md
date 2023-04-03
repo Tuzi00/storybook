@@ -35,14 +35,14 @@ const data = {
   title: 'Img03',
   list: [
     {
-      img: 'https://mqcai.top/cdn/hpcom_article.jpg',
+      img: 'https://images.pexels.com/photos/7245251/pexels-photo-7245251.jpeg',
       title: 'title标题',
       label: 'label标签',
       cnt: '测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2',
       change: false,
     },
     {
-      img: 'https://mqcai.top/cdn/hpcom_article.jpg',
+      img: 'https://images.pexels.com/photos/7245251/pexels-photo-7245251.jpeg',
       title: 'title标题',
       label: 'label标签',
       cnt: '测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2测试文字g2',

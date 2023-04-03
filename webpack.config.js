@@ -29,13 +29,32 @@ const getStyleLoader = (importLoaders, loaderName) => {
 }
 
 const entries = {};
-const fileNames = glob.sync('./src/**/*.js?(x)');
-// console.log('fileNames: ', fileNames);
+// const fileNames = glob.sync('./src/**/*.js?(x)');
+const fileNames = [
+  './src/index.js',
+  './src/List12/index.jsx',
+  './src/List11/index.jsx',
+  './src/List10/index.jsx',
+  './src/List09/index.jsx',
+  './src/List08/index.jsx',
+  './src/List07/index.jsx',
+  './src/List06/index.jsx',
+  './src/List05/index.jsx',
+  './src/List04/index.jsx',
+  './src/List03/index.jsx',
+  './src/List02/index.jsx',
+  './src/List01/index.jsx',
+  './src/Img01/index.jsx',
+  './src/Img02/index.jsx',
+  './src/Img03/index.jsx',
+  './src/Img04/index.jsx',
+  './src/Img05/index.jsx',
+  './src/Img06/index.jsx',
+]
 fileNames.forEach(file => {
   const filePath = file.replace(/^\.\/src\/(.+)\.jsx?$/, '$1');
   entries[filePath] = file;
 })
-
 module.exports = {
   mode: 'production',
   entry: entries,
@@ -80,7 +99,10 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.json']
+    extensions: ['.js', '.jsx', '.json'],
+    alias: {
+      'antd': path.resolve(__dirname, 'node_modules/antd')
+    }
   },
   externals: {
     react: {

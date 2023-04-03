@@ -38,19 +38,19 @@ const s = {
 const data = {
   title: "Let's build a better workplace",
   list:[{
-      icon:"https://mqcai.top/cdn/hpcom_article.jpg",
+      icon:"https://images.pexels.com/photos/7245251/pexels-photo-7245251.jpeg",
       title:["Facilities","Services"],
       cnt:"加齢に伴い私たちの身体は、しみ・しわ・たるみの増加、視力・聴力の低下、筋力や抵抗力の減少など、さまざまな老化サインを見せ始めます。",
       src:"http://www.baidu.com",
       link:"Learn more",
     },{
-      icon:"https://mqcai.top/cdn/hpcom_article.jpg",
+      icon:"https://images.pexels.com/photos/7245251/pexels-photo-7245251.jpeg",
       title:["Facilities","Services"],
       cnt:"加齢に伴い私たちの身体は、しみ・しわ・たるみの増加、視力・聴力の低下、筋力や抵抗力の減少など、さまざまな老化サインを見せ始めます。",
       src:"http://www.baidu.com",
       link:"Learn more",
     },{
-      icon:"https://mqcai.top/cdn/hpcom_article.jpg",
+      icon:"https://images.pexels.com/photos/7245251/pexels-photo-7245251.jpeg",
       title:["Facilities","Services"],
       cnt:"加齢に伴い私たちの身体は、しみ・しわ・たるみの増加、視力・聴力の低下、筋力や抵抗力の減少など、さまざまな老化サインを見せ始めます。",
       src:"http://www.baidu.com",

@@ -1,0 +1,100 @@
+import { ArgsTable, Canvas, Meta, Story } from "@storybook/addon-docs";
+import { List07 } from "../src";
+
+<Meta title="MDX/List07" component={List07} />
+
+<style>
+  {`
+    h2 {
+      color: rgba(0, 0, 0, 0.88);
+      font-weight: 500;
+      font-family: Avenir,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji',sans-serif;
+      font-size: 24px;
+      line-height: 32px;
+    }
+    ul, ol {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    ul li {
+      margin-left: 20px;
+      padding-left: 4px;
+      list-style-type: circle;
+    }
+  `}
+</style>
+
+# List07
+
+图像
+
+## 代码演示
+
+export const Template = (args) => <List07 data={args} />;
+
+<Canvas>
+  <Story
+    name="default"
+    args={{
+      list: [
+        {
+          title: "ti",
+          label: "label副标题",
+          cnt: "美容点滴の問合せ先とは異なりますのでご了承下さい。测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字",
+          list: [],
+        },
+        {
+          title: "title主题title主题title主题title主题",
+          label:
+            "label副标题label副标题label副标题label副标题label副标题label副标题label副标题label副标题label副标题label副标题",
+          cnt: "",
+          list: [
+            "取扱い中止の検査項目について",
+            "3月末で下記項目を取扱い中止とさせていただきます。",
+            "大変ご不便おかけいたしますが、引き続きよろしくお願い申し上げます。",
+          ],
+        },
+        {
+          title: "title主题title主题title主题title主题",
+          label:
+            "label副标题label副标题label副标题label副标题label副标题label副标题label副标题label副标题label副标题label副标题",
+          cnt: "",
+          list: [
+            "取扱い中止の検査項目について",
+            "3月末で下記項目を取扱い中止とさせていただきます。",
+            "大変ご不便おかけいたしますが、引き続きよろしくお願い申し上げます。",
+          ],
+        },
+        {
+          title: "title主题title主题title主题title主题",
+          label:
+            "label副标题label副标题label副标题label副标题label副标题label副标题label副标题label副标题label副标题label副标题",
+          cnt: "",
+          list: [
+            "取扱い中止の検査項目について",
+            "3月末で下記項目を取扱い中止とさせていただきます。",
+            "大変ご不便おかけいたしますが、引き続きよろしくお願い申し上げます。",
+          ],
+        },
+      ],
+      id: true,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## API
+
+- id `boolean`: 是否显示序号
+- list `array`: ITEM 对象
+
+### ITEM
+
+`cnt` 和 `list` 只有一个可以显示。
+
+- title `string`: 内容标题
+- label `string`: 二级标签
+- cnt `string`: 段落内容
+- list `array`: 内容数组

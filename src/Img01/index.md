@@ -37,7 +37,7 @@ const data = {
   title: 'Img01',
   list: [
     {
-      img: 'https://mqcai.top/cdn/hpcom_article.jpg',
+      img: 'https://images.pexels.com/photos/7245251/pexels-photo-7245251.jpeg',
       title: '2022.6.10',
       label: 'HZNU',
       cnt: '',
@@ -49,7 +49,7 @@ const data = {
       ],
     },
     {
-      img: 'https://mqcai.top/cdn/hpcom_article.jpg',
+      img: 'https://images.pexels.com/photos/7245251/pexels-photo-7245251.jpeg',
       title: '2022.6.10',
       label: 'HZNU',
       cnt: '测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字',

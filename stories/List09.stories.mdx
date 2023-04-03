@@ -1,0 +1,70 @@
+import { ArgsTable, Canvas, Meta, Story } from "@storybook/addon-docs";
+import { List09 } from "../src";
+
+<Meta title="MDX/List09" component={List09} />
+
+<style>
+  {`
+    h2 {
+      color: rgba(0, 0, 0, 0.88);
+      font-weight: 500;
+      font-family: Avenir,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji',sans-serif;
+      font-size: 24px;
+      line-height: 32px;
+    }
+    ul, ol {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    ul li {
+      margin-left: 20px;
+      padding-left: 4px;
+      list-style-type: circle;
+    }
+  `}
+</style>
+
+# List09
+
+图像
+
+## 代码演示
+
+export const Template = (args) => <List09 data={args} />;
+
+<Canvas>
+  <Story
+    name="default"
+    args={{
+  list: [
+    {
+      title: 'title主题title主题',
+      label: 'label标签l签',
+      cnt: '取扱い中止の検査項目について大変ご不便おかけいたしますが、引き続きよろしくお願い申し上げます。',
+    },
+    {
+      title: 'title主题title主题title主题title主题',
+      label: 'label标签l签',
+      cnt: '取扱い中止の検査項目について大変ご不便おかけいたしますが、引き続きよろしくお願い申し上げます。',
+    },
+  ],
+  label: true,
+  tit: true,
+}}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## API
+
+- tit `boolean`: 标题栏目的显示模式
+- label `boolean`: 标签的显示模式
+- list `array`: ITEM 对象
+
+### ITEM
+
+- title `string`: 内容标题
+- label `string`: 标签
+- cnt `string`: 段落内容
