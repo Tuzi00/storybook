@@ -1,0 +1,81 @@
+import { ArgsTable, Canvas, Meta, Story } from "@storybook/addon-docs";
+import { Img01 } from "../src";
+
+<Meta title="MDX/Img01" component={Img01} />
+
+<style>
+  {`
+    h2 {
+      color: rgba(0, 0, 0, 0.88);
+      font-weight: 500;
+      font-family: Avenir,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji',sans-serif;
+      font-size: 24px;
+      line-height: 32px;
+    }
+    ul, ol {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    ul li {
+      margin-left: 20px;
+      padding-left: 4px;
+      list-style-type: circle;
+    }
+  `}
+</style>
+
+# Img01
+
+图像
+
+## 代码演示
+
+export const Template = (args) => <Img01 data={args} />;
+
+<Canvas>
+  <Story
+    name="default"
+    args={{
+      list: [
+        {
+          img: "https://images.ctfassets.net/tfio2c4e6qit/6OaMSuMWf7zDlOL4xSm4dI/cf51a822c75fa778e3e41ec2c19520f1/GettyImages-1311238556__1_.jpg?w=2360&h=1240&fit=thumb&q=75&fm=webp",
+          title: "2022.6.10",
+          label: "HZNU",
+          cnt: "",
+          list: [
+            "测试测试测试1",
+            "22222222",
+            "333333测试测试测试",
+            "444444444",
+          ],
+        },
+        {
+          img: "https://images.ctfassets.net/tfio2c4e6qit/6OaMSuMWf7zDlOL4xSm4dI/cf51a822c75fa778e3e41ec2c19520f1/GettyImages-1311238556__1_.jpg?w=2360&h=1240&fit=thumb&q=75&fm=webp",
+          title: "2022.6.10",
+          label: "HZNU",
+          cnt: "测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字",
+          list: [],
+        },
+      ],
+      id: true,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## API
+
+- id `boolean`: 是否显示序号
+- list `array`: ITEM 对象
+
+### ITEM
+
+`cnt` 和 `list` 只有一个可以显示。
+
+- img `string`: 图片链接
+- title `string`: 一级标签
+- label `string`: 二级标签
+- cnt `string`: 段落内容
+- list `array`: 内容数组
