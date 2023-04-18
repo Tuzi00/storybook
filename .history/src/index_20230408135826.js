@@ -1,6 +1,6 @@
 
 
-export { default as Img01 } from './Img01/index.jsx';
+export { default as Img01 } from './Img01/index.jsx/index.jsx';
 export { default as Img02 } from './Img02/index.jsx';
 export { default as Img03 } from './Img03/index.jsx';
 export { default as Img04 } from './Img04/index.jsx';

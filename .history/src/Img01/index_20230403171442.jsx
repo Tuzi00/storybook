@@ -6,6 +6,7 @@ import './index.less'
 
 const Img01 = ({ data }) => {
 
+
   return (
     <div className="sc-Img01">
       <div className="m-bd">

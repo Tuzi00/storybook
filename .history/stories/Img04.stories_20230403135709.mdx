@@ -1,7 +1,7 @@
 import { ArgsTable, Canvas, Meta, Story } from "@storybook/addon-docs";
-import { Img05 } from "../src";
+import { Img04 } from "../src";
 
-<Meta title="MDX/Img05" component={Img05} />
+<Meta title="MDX/Img04" component={Img04} />
 
 <style>
   {`
@@ -25,23 +25,21 @@ import { Img05 } from "../src";
   `}
 </style>
 
-# Img05
+# Img04
 
 图像
 
 ## 代码演示
 
-export const Template = (args) => <Img05 data={args} />;
+export const Template = (args) => <Img04 data={args} />;
 
 <Canvas>
   <Story
     name="default"
     args={{
-      label: "2022.6.10",
-      cnt: "段落内容测试测试测试段落内容段落内容段落内容",
-      img1: "https://images.ctfassets.net/tfio2c4e6qit/6OaMSuMWf7zDlOL4xSm4dI/cf51a822c75fa778e3e41ec2c19520f1/GettyImages-1311238556__1_.jpg?w=2360&h=1240&fit=thumb&q=75&fm=webp",
-      img2: "https://images.ctfassets.net/tfio2c4e6qit/6OaMSuMWf7zDlOL4xSm4dI/cf51a822c75fa778e3e41ec2c19520f1/GettyImages-1311238556__1_.jpg?w=2360&h=1240&fit=thumb&q=75&fm=webp",
-      bg: true,
+      title: "测试标题",
+      cnt: "段落文本内容测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试",
+      img: "https://images.pexels.com/photos/7245251/pexels-photo-7245251.jpeg",
     }}
   >
     {Template.bind({})}
@@ -50,8 +48,6 @@ export const Template = (args) => <Img05 data={args} />;
 
 ## API
 
-- label `string`: 标签文本
+- title `string`: 标题文本
 - cnt `string`: 段落内容
-- img1 `string`: 图片链接
-- img2 `string`: 图片链接
-- bg `boolean`: label 背景
+- img `string`：图片链接
